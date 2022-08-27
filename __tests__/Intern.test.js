@@ -15,7 +15,7 @@ test("Get Intern Name", () => {
 });
 
 test("Get Intern ID", () =>{
-    const Intern = new Intern("Mads", 123, "test@test.com", "USC");
+    const intern = new Intern("Mads", 123, "test@test.com", "USC");
     expect(intern.getId()).toBe(123);
 });
 

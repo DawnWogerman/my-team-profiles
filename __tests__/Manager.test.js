@@ -15,11 +15,22 @@ test("Get Manager Name", ()=>{
 });
 
 test("Get Manager ID", () =>{
-    const manager = new Manager("Mads", 123, "test@test.com");
+    const manager = new Manager("Mads", 123, "test@test.com", 9695589);
     expect(manager.getId()).toBe(123);
 });
 
 test("Get Email", ()=>{
-    const manager = new Manager("Mads", 123, "test@test.com");
+    const manager = new Manager("Mads", 123, "test@test.com", 9695589);
     expect(manager.getEmail()).toBe("test@test.com");
+});
+
+test("Get Office Number", ()=>{
+    const manager = new Manager("Mads", 123, "test@test.com", 9695589);
+    expect(manager.officeNumber).toBe(9695589);
+});
+
+test("Get Role", ()=>{
+    const manager = new Manager("Mads", 123, "test@test.com", 9695589);
+    expect(manager.getRole()).toBe("Manager");
+
 });
