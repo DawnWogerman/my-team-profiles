@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/DawnWogerman/my-team-profiles#readme",
   "dependencies": {
-    "inquirer": "^9.1.0",
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.0.0",
     "jest": "^29.0.1"
   }
 }
